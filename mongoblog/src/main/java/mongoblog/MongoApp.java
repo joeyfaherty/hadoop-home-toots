@@ -38,7 +38,7 @@ public class MongoApp {
 		//create list of n documents
 		List<Document> documents = new ArrayList<Document>();
 		for (int i = 0; i < 100; i++) {
-		    documents.add(new Document("elementNo", i));
+		    documents.add(new Document("elementNo", "123"));
 		}
 		System.out.println("Now we have : " + collection.count() + "documents in collection: " + collection.getNamespace());
 		System.out.println("Inserting into collection " + collection.getNamespace() );
@@ -55,6 +55,7 @@ public class MongoApp {
 		} finally {
 		    cursor.close();
 		}
+		
 		
 		//close the connection
 		mongoClient.close();
