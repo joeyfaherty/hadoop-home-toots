@@ -1,0 +1,31 @@
+ <?xml version="1.0" ?>
+<assembly>
+    <id>distribution</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>true</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>scripts</directory>
+            <outputDirectory>scripts</outputDirectory>
+            <useDefaultExcludes>true</useDefaultExcludes>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <outputDirectory>scripts</outputDirectory>
+            <useDefaultExcludes>true</useDefaultExcludes>
+        </fileSet>
+    </fileSets>
+    <files>
+        <file>
+            <source>${project.build.directory}/${project.build.finalName}.jar</source>
+            <outputDirectory>lib</outputDirectory>
+        </file>
+<!--         <file> -->
+<!--         <source>scripts/run-${artifactId}.sh</source> -->
+<!--         <outputDirectory>scripts</outputDirectory> -->
+<!--         <fileMode>755</fileMode> -->
+<!--         </file> -->
+    </files>
+</assembly>
