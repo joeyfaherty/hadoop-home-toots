@@ -1,0 +1,6 @@
+hello my name is joey
+hello how is the weather?
+ERROR Something is failing..
+Now everything is OK
+ERROR Now the same issue is erroring
+Back to normal again
